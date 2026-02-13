@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Januz Sellaj | Automation Engineering Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-main: #f4f6f8;
+            --bg-header: #0f172a;
+            --card-bg: #ffffff;
+            --accent: #2563eb;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --border: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--bg-header);
+            color: #ffffff;
+            padding: 50px 20px 40px;
+        }
+
+        .header-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .headshot {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background-color: #cbd5e1;
+            background-image: url("headshot.jpeg");
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 20px;
+            border: 3px solid #ffffff;
+        }
+
+        header h1 {
+            font-size: 2.3rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        header p {
+            font-size: 1.05rem;
+            color: #cbd5e1;
+            margin-bottom: 25px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .nav-buttons a {
+            border: 1px solid #cbd5e1;
+            color: #ffffff;
+            padding: 8px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        .nav-buttons a:hover {
+            background-color: #ffffff;
+            color: var(--bg-header);
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        section h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 28px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            margin-bottom: 20px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .skill {
+            background-color: #f8fafc;
+            padding: 15px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .job h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .job span {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .job ul {
+            margin-top: 10px;
+            padding-left: 18px;
+        }
+
+        .job li {
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+        }
+
+        .project h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .project p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .contact a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="headshot"></div>
+
+        <h1>Januz Sellaj</h1>
+        <p>Automation Systems Engineering Technology Student • McMaster University</p>
+
+        <div class="nav-buttons">
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Work Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <section id="about">
+        <h2>Professional Summary</h2>
+        <div class="card">
+            <p>
+                Fourth-year Automation Engineering Technology student at McMaster University with experience working with PLC systems, microcontrollers, electrical equipment, 3D printing, and additive manufacturing technologies. Strong background in troubleshooting and supporting automated systems in manufacturing environments. Seeking entry-level opportunities in automation, controls, or manufacturing engineering.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">PLC Programming</div>
+            <div class="skill">C++</div>
+            <div class="skill">FANUC CERT Level 1</div>
+            <div class="skill">Data Analysis</div>
+            <div class="skill">AutoCAD</div>
+            <div class="skill">SOLIDWORKS</div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+
+        <div class="card job">
+            <h3>Manufacturing Engineering Co-op Student – Celeros Flow Technology</h3>
+            <span>Burlington, ON | January 2025 – August 2025</span>
+            <ul>
+                <li>Developed an internal web application that automated engineering product change requests, enabling digital submission, approval for routing, and checklist-driven notifications to ensure cross-functional awareness and action</li>
+                <li>Produced a scaled, functional pump model for manufacturing training and display by adapting CAD part files for 3D printing, fabricating components, and integrating electrical elements to demonstrate pump assembly and operation</li>
+                <li>Collaborated with the hydraulics team to analyze historical pump performance curves, consolidating data and updating sales-selection software to improve accuracy in matching pumps to customer specifications</li>
+            </ul>
+        </div>
+
+        <div class="card job">
+            <h3>Automation Co-op Student – Homestead Land Holdings Limited</h3>
+            <span>Burlington, ON | April 2024 – August 2024</span>
+            <ul>
+                <li>Assisted with design improvements and data entry in the departmental database using automation software such as Power Automate and Power Apps to make data collection more efficient</li>
+                <li>Created an application to track work-related mileage and automatically generate expense reports for compensation, eliminating the need for manual administrative tasks</li>
+                <li>Analyzed previous capital expenditure files to complete an economic analysis on methods for preventing snow and ice accumulation on parking entrance ramps, determining the most cost-effective solution</li>
+            </ul>
+        </div>
+
+        <div class="card job">
+            <h3>Receiver/Meat Department – Farm Boy</h3>
+            <span>Burlington, ON | April 2022 – August 2023</span>
+            <ul>
+                <li>Received and unloaded 2-3 deliveries before store opening hours and distributed them to all departments</li>
+                <li>Ensured the accuracy and quality of all deliveries, reporting discrepancies to the management team</li>
+                <li>Lead by example and promoted corporate policies, customer service standards, departmental cleanliness and opening and closing procedures</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="card project">
+            <h3>Smart Safe</h3>
+            <p>Built an automated smart safe using a microcontroller, integrating keypad-based access control, motordriven locking, intrusion detection, and status feedback via LEDs, 7-segment display, and alarm system</p>
+        </div>
+
+        <div class="card project">
+            <h3>Music Device ("MP3 Player")</h3>
+            <p>Worked in a group of three other students to develop code in C++ that stores audio files along with their general information (queueable songs, stored song information, playable audio files)</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="card">
+            <p>
+                <strong>Automation Systems Engineering Technology</strong><br>
+                McMaster University<br>
+                Expected Graduation: December 2026
+            </p>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies & Interests</h2>
+        <div class="card">
+            <p>
+                Some of my hobbies include soccer, technology, fitness, snowboarding and watching movies.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="card contact">
+            <p>
+                Email: sellajj@mcmaster.ca<br>
+                LinkedIn: <a href="https://www.linkedin.com/in/januz-sellaj-767978261/" target="_blank" rel="noopener noreferrer">linkedin.com/in/januz-sellaj-767978261</a><br>
+                GitHub: <a href="https://github.com/jsellaj" target="_blank" rel="noopener noreferrer">github.com/jsellaj</a>
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    © 2026 Januz Sellaj
+</footer>
+
+</body>
+</html>
